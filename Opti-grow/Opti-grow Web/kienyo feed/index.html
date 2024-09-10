@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opti Grow: Feed</title>
+    <link rel="icon" href="images/plant-icon.jpg" type="image/jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        /* Basic CSS for demonstration, add your styles as needed */
+        .data-display { margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        .data-item { margin-bottom: 10px; }
+        .ai-review { margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Opti Grow</a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a class="btn" href="get_a_quote.html"> <i class="fas fa-seedling"></i> Get A Quote</a></li>
+                    <li><a class="btn" href="login.html"> <i class="fas fa-user"></i> Log In/Register </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="data-display">
+        <h2>Live Data</h2>
+        <div class="data-item"><strong>Humidity:</strong> <span id="humidity">Loading...</span></div>
+        <div class="data-item"><strong>Temperature:</strong> <span id="temperature">Loading...</span></div>
+        <div class="data-item"><strong>NPK Concentration:</strong> <span id="npk">Loading...</span></div>
+        <div class="data-item"><strong>Soil Moisture:</strong> <span id="soil-moisture">Loading...</span></div>
+    </div>
+
+    <section class="faq bg-light">
+        <div class="container-sm">
+            <h3 class="text-xl text-center">Frequently Asked Questions</h3>
+            <div class="faq-content">
+                <!-- FAQ content here -->
+            </div>
+        </div>
+    </section>
+
+    <div class="ai-review">
+        <h2>AI Review Section</h2>
+        <p id="ai-review-text">AI-generated review text will appear here.</p>
+    </div>
+
+    <footer class="footer bg-black">
+        <div class="container-test">
+            <div class="footer-grid">
+                <div>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Product</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Plant Care Tips</a></li>
+                        <li><a href="#">User Guides</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">hello@optigrow.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

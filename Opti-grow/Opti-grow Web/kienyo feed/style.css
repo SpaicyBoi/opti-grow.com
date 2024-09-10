@@ -1,0 +1,209 @@
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #e0e0e0;
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  background-color: #004d00; /* Dark green */
+  padding: 15px 0;
+  color: #ffffff;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar .logo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar .main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .main-menu li {
+  margin-left: 20px;
+}
+
+.navbar .main-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar .main-menu a:hover {
+  color: #00ff00; /* Bright green */
+}
+
+.navbar .btn {
+  background-color: #00ff00;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #004d00;
+}
+
+/* Data Display Section Styling */
+.data-display {
+  background-color: #2e2e2e;
+  border: 1px solid #004d00;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  animation: fadeIn 1s ease-out;
+}
+
+.data-display h2 {
+  color: #00ff00;
+  margin: 0 0 20px;
+}
+
+.data-item {
+  color: #e0e0e0;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* FAQ Section Styling */
+.faq {
+  background-color: #1e1e1e;
+  padding: 40px 20px;
+  color: #e0e0e0;
+}
+
+.faq .container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq h3 {
+  color: #00ff00;
+  margin-bottom: 20px;
+}
+
+.faq .faq-group {
+  border-bottom: 1px solid #004d00;
+  margin-bottom: 10px;
+}
+
+.faq .faq-group-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #2e2e2e;
+  transition: background-color 0.3s ease;
+}
+
+.faq .faq-group-header:hover {
+  background-color: #004d00;
+}
+
+.faq .faq-group-body {
+  display: none;
+  padding: 10px;
+}
+
+.faq .faq-group-body.open {
+  display: block;
+}
+
+/* AI Review Section Styling */
+.ai-review {
+  background-color: #2e2e2e;
+  border: 1px solid #004d00;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  animation: fadeIn 1s ease-out;
+}
+
+.ai-review h2 {
+  color: #00ff00;
+  margin: 0 0 10px;
+}
+
+.ai-review p {
+  color: #e0e0e0;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #004d00;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer .container-test {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer .footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .footer-grid div {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer .footer-grid h4 {
+  color: #00ff00;
+  margin: 0 0 10px;
+}
+
+.footer .footer-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-grid ul li {
+  margin-bottom: 5px;
+}
+
+.footer .footer-grid a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .footer-grid a:hover {
+  color: #00ff00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

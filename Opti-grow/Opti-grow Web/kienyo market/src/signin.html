@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Sign In Form</title>
+        <link rel="stylesheet" href="logstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a class="linknot" href="index.html">
+            Crash Aid
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="index.html#how-it-works">How It Works</a>
+            </li>
+            <li>
+              <a class="btn" href="get_a_quote.html"> <i class="fas fa-money-check"></i>Get A Quote</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Hamburger Button -->
+        <button class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#how-it-works">How It Works</a>
+            </li>
+            <li>
+              <a class="btn" href="#"><i class="fas fa-money-check"></i>Get A Quote</a>
+            </li>
+            <li>
+              <a class="btn" href="#"> <i class="fas fa-user"></i> Login/Register </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <div class="sign-up-form">
+            <h1>Sign In Now</h1>
+            <form>
+                <input type="email" class="input-box" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address">
+                <input type="password" class="input-box" placeholder="Your Password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Enter a strong password (at least 8 characters, including uppercase, lowercase, numbers, and at least one special character)">
+                <button type="submit" class="sign-btn">Sign In</button>
+                <hr>
+                <p class="or">OR</p>
+                <p>Don't have an account ? <a href="login.html"><button type="button" class="sign-btn">Sign Up</button></a></p>
+            </form>
+        </div>
+        <script src="main.js" async defer></script>
+    </body>
+</html>

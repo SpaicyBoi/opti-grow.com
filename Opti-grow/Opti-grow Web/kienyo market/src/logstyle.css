@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #0c0b0b;
+}
+
+.sign-up-form{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+.sign-up-form h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+button{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1c8;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+
+/* Navbar */
+.navbar {
+    background: #000;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .main-menu ul {
+    display: flex;
+  }
+  
+  .navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    color: #fff;
+  }
+  
+  .navbar ul li a:hover {
+    color: #b0b5bb;
+  }
+  
+  .navbar ul li a i {
+    margin-right: 10px;
+  }
+  
+  .navbar ul li:last-child a {
+    margin-left: 10px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .linknot{
+    color: #8d8d8d;
+  }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: #777;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    list-style: none;
+  }
+
+  .btn::after {
+    content: none;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .btn-primary {
+    background: #e6e7e9;
+    color: #fff;
+  }
+  
+  .btn-dark {
+    background: #0c0b0b;
+    color: #fff;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  /* Hamburger Button */
+  .hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+  }
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .mobile-menu.active {
+    right: 0;
+  }
+  
+  .mobile-menu ul {
+    margin-top: 100px;
+    padding-right: 10px;
+  }
+  
+  .mobile-menu ul li {
+    margin: 10px 0;
+  }
+  
+  .mobile-menu ul li a {
+    font-size: 20px;
+    transition: 0.3s;
+  }
+
+/* ... your existing CSS ... */
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#loadingIndicator {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#successMessage {
+  display: none;
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+@media (max-width: 670px) {
+    .navbar .main-menu {
+      display: none;
+      }
+  
+    .navbar .hamburger-button {
+      display: block;
+    }
+
+    .hero .hero-buttons .btn {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+      }
+}

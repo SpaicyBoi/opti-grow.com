@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="logstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a class="linknot" href="index.html">
+            Crash Aid
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="index.html#how-it-works">How It Works</a>
+            </li>
+            <li>
+              <a class="btn" href="get_a_quote.html"> <i class="fas fa-money-check"></i>Get A Quote</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Hamburger Button -->
+        <button class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#how-it-works">How It Works</a>
+            </li>
+            <li>
+              <a class="btn" href="#"><i class="fas fa-money-check"></i>Get A Quote</a>
+            </li>
+            <li>
+              <a class="btn" href="#"> <i class="fas fa-user"></i> Login/Register </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="sign-up-form">
+      <h1>Sign Up Now</h1>
+      <form id="signupForm">
+          <input type="text" id="name" class="input-box" placeholder="Your Name" required>
+          <p id="nameError" class="error-message"></p>
+
+          <input type="email" id="email" class="input-box" placeholder="Your Email" title="Enter a valid email address">
+          <p id="emailError" class="error-message"></p>
+
+          <input type="tel" id="phoneNumber" class="input-box" placeholder="+254xxxxxxxxx" required pattern="^\+254\d{9}$" title="Enter a valid Kenyan phone number (+254 followed by 9 digits)">
+          <p id="phoneNumberError" class="error-message"></p>
+
+          <input type="password" id="password" class="input-box" placeholder="Your Password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Enter a strong password (at least 8 characters, including uppercase, lowercase, numbers, and at least one special character)">
+
+          <input type="password" id="confirmPassword" class="input-box" placeholder="Confirm Password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Enter a strong password (at least 8 characters, including uppercase, lowercase, numbers, and at least one special character)">
+
+          <p><span><input type="checkbox" required></span> I agree to the <a href="#">terms and conditions</a></p>
+          <p><span><input type="checkbox" required></span> I agree to the <a href="#">privacy policy</a></p>
+
+          <button type="submit" class="sign-btn">Sign Up</button>
+
+          <hr>
+          <p class="or">OR</p>
+          <p>Do you have an account ? <a href="signin.html"><button type="button" class="sign-btn">Sign In</button></a></p>
+
+          <div id="loadingIndicator"></div>
+          <div id="errorMessage"></div>
+          <div id="successMessage"></div>
+      </form>
+  </div>
+        <script type="module" src="login.js"></script>
+        <!--<script src="main.js" async defer></script>-->
+    </body>
+</html>
